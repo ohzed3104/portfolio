@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import avatar from "../assets/avatar.jpg";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -56,12 +57,12 @@ function Home() {
                 </div>
               </section>
               <div className="flex justify-end p-3">
-                <a
-                  href="#Projects"
+                <Link
+                  to="/Projects"
                   className="cursor-pointer  border-4 rounded-md mt-20  font-bold hover:bg-gray-700      "
                 >
                   Projects =&gt;
-                </a>
+                </Link>
               </div>
             </div>
           </div>
