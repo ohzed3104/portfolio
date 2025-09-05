@@ -27,7 +27,7 @@ function Home() {
               <section>
                 <h5 className="font-bold  uppercase p-5  ">about me</h5>
 
-                <h1 className="ml-5">
+                <div className="ml-5">
                   <h1>My name Sang!</h1> As a third-year Information Technology
                   student, I am seeking an internship opportunity to apply and
                   enhance my web programming skills, particularly in front-end
@@ -35,7 +35,7 @@ function Home() {
                   willingness to learn, and a desire to contribute to the
                   success of the team while further developing myself in a
                   professional environment.
-                </h1>
+                </div>
               </section>
               <section>
                 <h5 className="font-bold  uppercase p-5  ">🎓 Education</h5>
@@ -48,7 +48,9 @@ function Home() {
               <section>
                 <h5 className="font-bold  uppercase p-5  ">💡 Skills</h5>
                 <div className="ml-5">
-                  <h1>• Programming Languages: C, JavaScript, HTML, CSS</h1>
+                  <h1>
+                    • Programming Languages: C, JavaScript, HTML, CSS ,TailWind
+                  </h1>
                   <h1>• Frameworks/Libraries: ReactJS</h1>
                   <h1>• Tools: Git, Vite, Vscode</h1>
                 </div>
@@ -56,7 +58,7 @@ function Home() {
               <div className="flex justify-end p-3">
                 <a
                   href="#Projects"
-                  className="cursor-pointer  border-4 rounded-md mt-20  font-bold hover:scale-110  transition-transform duration-150    inline-block     "
+                  className="cursor-pointer  border-4 rounded-md mt-20  font-bold hover:bg-gray-700      "
                 >
                   Projects =&gt;
                 </a>

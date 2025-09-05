@@ -1,28 +1,42 @@
+import { NavLink } from "react-router-dom";
+
 function Header() {
   return (
     <div className="bg-gray-900   w-full h-20  text-white flex items-center justify-between">
       <div className="p-2 font-bold  uppercase text-[20px]"> portfolio</div>
       <nav className="flex   space-x-2 p-3 mt-10 text-[15px] font-bold  ">
-        <a
-          href="Home.jsx "
-          className="hover:scale-125 transition-transform duration-300 inline-block "
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            isActive
+              ? "scale-125 transition-transform duration-300 inline-block "
+              : "hover:scale-125 transition-transform duration-300 inline-block"
+          }
         >
           home
-        </a>
+        </NavLink>
         <div>|</div>
-        <a
-          href="Projext.jsx"
-          className="hover:scale-125 transition-transform duration-300 inline-block "
+        <NavLink
+          to="/Projects"
+          className={({ isActive }) =>
+            isActive
+              ? "scale-125 transition-transform duration-300 inline-block "
+              : "hover:scale-125 transition-transform duration-300 inline-block"
+          }
         >
           projects
-        </a>
+        </NavLink>
         <div>|</div>
-        <a
-          hred="contact.jsx"
-          className="cursor-pointer  hover:scale-125 transition-transform duration-300 inline-block "
+        <NavLink
+          to="/Contact"
+          className={({ isActive }) =>
+            isActive
+              ? "scale-125 transition-transform duration-300 inline-block "
+              : "hover:scale-125 transition-transform duration-300 inline-block"
+          }
         >
           contact
-        </a>
+        </NavLink>
       </nav>
     </div>
   );
