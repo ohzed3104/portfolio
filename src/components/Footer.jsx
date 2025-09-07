@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <div className="w-full h-15   bg-black text-white flex items-center justify-center font-bold  ">
+    <div className="w-full h-6   bg-black text-white flex items-center justify-center font-bold  ">
       © 2025 Hua Sang
     </div>
   );

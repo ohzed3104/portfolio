@@ -41,7 +41,9 @@ function Home() {
               <section>
                 <h5 className="font-bold  uppercase p-5  ">🎓 Education</h5>
                 <div className="ml-5">
-                  <h2>Academy of Cryptography Techniques (2022 – Present)</h2>
+                  <a href="https://actvn.edu.vn/" className="underline ">
+                    Academy of Cryptography Techniques (2022 – Present)
+                  </a>
                   <h1>• Major: Information Technology</h1>
                   <h1>• English Proficiency: Intermediate</h1>
                 </div>
