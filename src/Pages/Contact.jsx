@@ -1,56 +1,65 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { useState } from "react";
+import avatar from "../assets/avatar.jpg";
+import { Mail, Phone, Globe, MapPin } from "lucide-react";
 
 function Contact() {
-  const [active, setActive] = useState("");
   return (
     <>
-      <div className="flex flex-col min-h-screen ">
+      <div className="flex flex-col min-h-screen">
         <Header />
-        <div className="flex-1 ">
-          <h1> About me</h1>
-          <div className="flex justify-start  space-x-3  ">
-            <div className="w-[250px] h-[300px] boder-1 rounded-md shadow-md shadow-gray-500 p-3 m-3">
-              <button
-                className=" border-1    rounded-ee-md cursor-pointer hover:bg-gray-200 shadow-md shadow-gray-300 hover:scale-95  transition-transform duration-200  ease-linear  "
-                onClick={() => {
-                  setActive("camera");
-                }}
-              >
-                camera
-              </button>
-              <button
-                className=" border-1  ml-2  rounded-ee-md cursor-pointer hover:bg-gray-200 shadow-md shadow-gray-300 hover:scale-95  transition-transform duration-200  ease-linear  "
-                onClick={() => {
-                  setActive("thiet bi");
-                }}
-              >
-                thiet bi
-              </button>
-              {active === "camera" && (
-                <div className="flex flex-col items-start mt-4">
-                  <div>
-                    <input type="checkbox" /> hello my name is sang
-                  </div>
-                  <li>noi dung 1</li>
+
+        <main className="flex-1 flex items-center justify-center bg-gray-50 px-4">
+          <div className="max-w-4xl w-full grid md:grid-cols-2 gap-6 bg-white shadow-lg rounded-2xl overflow-hidden">
+            {/* Left Side - Image */}
+            <div className="hidden md:block">
+              <img
+                src={avatar}
+                alt="Profile"
+                className="h-[350px] w-full object-cover"
+              />
+            </div>
+
+            {/* Right Side - Info */}
+            <div className="p-8 flex flex-col justify-center">
+              <h1 className="text-2xl font-bold text-gray-800 mb-6 border-b-2 border-black inline-block">
+                PERSONAL INFORMATION
+              </h1>
+
+              <div className="space-y-4 text-gray-700">
+                <div className="flex items-center space-x-3">
+                  <Phone className="w-5 h-5 text-blue-600" />
+                  <span>0346 974 856</span>
                 </div>
-              )}
-              {active === "thiet bi" && (
-                <div className="flex flex-col items-start mt-4">
-                  <div>
-                    <input type="checkbox" /> hello my name is gnas
-                  </div>
-                  <li>noi dung 2</li>
+
+                <div className="flex items-center space-x-3">
+                  <Mail className="w-5 h-5 text-blue-600" />
+                  <div>huaducsang@gmail.com</div>
                 </div>
-              )}
+
+                <div className="flex items-center space-x-3">
+                  <Globe className="w-5 h-5 text-blue-600" />
+                  <a
+                    href="https://facebook.com/huaducsang"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
+                    facebook.com/huaducsang
+                  </a>
+                </div>
+
+                <div className="flex items-center space-x-3">
+                  <MapPin className="w-5 h-5 text-blue-600" />
+                  <span>Tan Trieu, Thanh Tri, Hanoi</span>
+                </div>
+              </div>
             </div>
           </div>
-          {/* show noi dung */}
-        </div>
-      </div>
+        </main>
 
-      <Footer />
+        <Footer />
+      </div>
     </>
   );
 }
