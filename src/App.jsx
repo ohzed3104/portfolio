@@ -1,6 +1,6 @@
 import Home from "./Pages/Home";
-import Project from "./pages/Projects";
-import Contact from "./pages/Contact";
+import Project from "./Pages/Projects";
+import Contact from "./Pages/Contact";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
