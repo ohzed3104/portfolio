@@ -1,13 +1,36 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import avatar from "../assets/avatar.jpg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+import useAuth from "../Auth/useAuth";
 
 function Home() {
+  const { user, logout } = useAuth();
+  const Navigate = useNavigate();
+  useEffect(() => {
+    if (!user) {
+      Navigate("/login");
+    }
+  }, [user, Navigate]);
+
   return (
     <>
       <div className="flex flex-col min-h-screen ">
         <Header />
+        <div>
+          {user ? (
+            <>
+              <p>Hello, {user.username}</p>
+              <button
+                className="   text-black boder-2 border-black rounded-ee-md      shadow-md hover:bg-gray-300 transition-colors duration-300"
+                onClick={logout}
+              >
+                Logout
+              </button>
+            </>
+          ) : null}
+        </div>
         <div className="flex-1 ">
           <div className="flex justify-between ">
             <div className="w-[70%] ">
@@ -61,7 +84,7 @@ function Home() {
               <div className="flex justify-end p-3">
                 <Link
                   to="/Projects"
-                  className="cursor-pointer  border-4 rounded-md mt-20  font-bold hover:bg-gray-700      "
+                  className="cursor-pointer  border-4 rounded-md mt-20  font-bold hover:bg-gray-700  bottom-0     "
                 >
                   Projects =&gt;
                 </Link>
