@@ -23,13 +23,13 @@ export default function Login() {
         </h2>
         <input
           type="text"
-          placeholder="Username"
+          placeholder="Username :admin"
           className="w-full mb-4 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
           onChange={(e) => setuserName(e.target.value)}
         />
         <input
           type="password"
-          placeholder="Password"
+          placeholder="Password :admin"
           className="w-full mb-6 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
           onChange={(e) => setPassword(e.target.value)}
         />
