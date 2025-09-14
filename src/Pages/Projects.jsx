@@ -97,6 +97,9 @@ function Project() {
               <h1 className="pl-2 font-bold  ">
                 Technologies: ReactJS, JavaScript, Tailwind CSS
               </h1>
+              <li className="pl-3">
+                Feature: Search for movies and watch trailers
+              </li>
               <h1 className="pl-2">
                 Libraries: React Modal, React Multi Carousel, React YouTube
               </h1>
