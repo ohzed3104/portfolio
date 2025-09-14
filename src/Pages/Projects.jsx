@@ -101,11 +101,11 @@ function Project() {
                 Libraries: React Modal, React Multi Carousel, React YouTube
               </h1>
               <h1 className="pl-2">
-                API: TMDB API với Bearer Token Authentication
+                API: TMDB API and Bearer Token Authentication
               </h1>
               <div className="pl-2">
                 {" "}
-                * Demo chi tiết :{" "}
+                * More :{" "}
                 <a
                   className="cursor-pointer underline decoration-grey-500 text-blue-500  "
                   href=" https://movier-app.vercel.app/"
@@ -116,7 +116,7 @@ function Project() {
 
               <div className="pl-3 bg-black w-full h-auto  text-white     ">
                 <h1 className="font-bold p-1 text-center text-3xl ">
-                  Phim Hot
+                  Movie Hot
                 </h1>
                 <div className="flex  justify-start  items-center ">
                   <Carousel
@@ -161,7 +161,7 @@ function Project() {
               </li>
               <div className="pl-2">
                 {" "}
-                * Demo chi tiết :{" "}
+                * More :{" "}
                 <a
                   className="cursor-pointer underline decoration-grey-500 text-blue-500  "
                   href=" https://drive.google.com/drive/folders/1UY6wL4TAljkKcIo3DU_nqYlv6Y9ScYA3"
