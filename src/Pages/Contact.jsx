@@ -53,6 +53,14 @@ function Contact() {
                   <MapPin className="w-5 h-5 text-blue-600" />
                   <span>Tan Trieu, Thanh Tri, Hanoi</span>
                 </div>
+                <div className="flex flex-col">
+                  <a
+                    href="https://github.com/ohzed3104"
+                    className=" text-black  hover:text-gray-500 "
+                  >
+                    • github.com/ohzed3104
+                  </a>
+                </div>
               </div>
             </div>
           </div>

@@ -85,27 +85,20 @@ function Project() {
           {active === "movie-app" && (
             <section>
               <h1 className="p-2 font-bold">Movie-app (4/2025 - 5/2025)</h1>
+              <li className="pl-3">Description:</li>
               <li className="pl-3">
-                Description: A modern movie browsing application
-              </li>
-              <li className="pl-3">
-                Integrated with TMDB API to provide updated movie information{" "}
+                • Designed a user-friendly interface with features like movie
+                search, trailer preview, and carousel display.
               </li>
               <li className="pl-3  ">
-                Built a user-friendly and visually appealing interface
+                • Built a movie browsing application integrated with TMDB API
+                for real-time movie data.
               </li>
-              <h1 className="pl-2 font-bold  ">
-                Technologies: ReactJS, JavaScript, Tailwind CSS
-              </h1>
-              <li className="pl-3">
-                Feature: Search for movies and watch trailers
+              <li className="pl-2 font-bold  ">
+                Tech Stack: ReactJS, JavaScript, Tailwind CSS, React Modal,
+                React Multi Carousel, React YouTube API
               </li>
-              <h1 className="pl-2">
-                Libraries: React Modal, React Multi Carousel, React YouTube
-              </h1>
-              <h1 className="pl-2">
-                API: TMDB API and Bearer Token Authentication
-              </h1>
+
               <div className="pl-2">
                 {" "}
                 * More :{" "}
@@ -146,21 +139,20 @@ function Project() {
           {active === "shop-sqt" && (
             <section>
               <h1 className="p-2 font-bold">Shop-sqt (5/2025-7/2025)</h1>
-              <li className="pl-3">
-                Description: An e-commerce website supporting user registration,
-                login, authorization, and purchasing
-              </li>
+              <li className="pl-3">Description:</li>
               <h1 className="pl-2 font-bold  ">
-                Technologies: ReactJS, TypeScript (typed with Cursor), Tailwind
-                CSS, RESTful API
+                Tech Stack: ReactJS, TypeScript, Tailwind CSS, RESTful API
               </h1>
               <li className="pl-2">
-                Developed UI for registration, login, and user account
-                management
+                Designed a responsive and modern UI using Tailwind CSS.
               </li>
               <li className="pl-2">
-                Built authentication using Context API and client-side route
-                handling
+                Implemented authentication and authorization using Context API
+                and client-side routing.
+              </li>
+              <li className="pl-2">
+                Developed an e-commerce web application with user registration,
+                login, account management, and product purchasing.
               </li>
               <div className="pl-2">
                 {" "}
